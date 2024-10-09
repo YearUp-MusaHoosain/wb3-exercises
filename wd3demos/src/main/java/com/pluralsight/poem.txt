@@ -1,0 +1,24 @@
+I boot up my laptop, feeling so keen,
+Today I’ll master this Java machine.
+“Hello, World!”—my first line, so proud,
+Then forty red errors scream out loud.
+
+“Public static void”—why’s it so picky?
+These braces and brackets are feeling quite tricky.
+I Google each error, down a rabbit hole,
+Stack Overflow’s now devouring my soul.
+
+NullPointerException? Oh, that sounds bad,
+The program just crashed—this is driving me mad.
+Loops that won’t loop, lists that won’t list,
+How did coding turn into *this*?
+
+My code won’t compile, I’ve smashed every key,
+Did Java just *laugh*? Or is it just me?
+One missing semicolon—I’m starting to cry,
+Why does it hate me? I’m a really nice guy.
+
+Hours go by, and I’ve learned one thing clear:
+In Java, no coder escapes without fear.
+But hey, if this compiles, I’ll do a dance,
+Then start debugging… because there's no chance.

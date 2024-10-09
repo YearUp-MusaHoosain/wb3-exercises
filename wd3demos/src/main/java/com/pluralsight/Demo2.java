@@ -1,30 +1,28 @@
 package com.pluralsight;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class WB3Demos {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
+public class Demo2
+{
+    public static void main(String[] args) throws FileNotFoundException
+    {
         try {
-            String[] names = {
-                    "Ezra", "Elisha", "Ian",
-                    "Siddalee", "Pursalane", "Zephaniah"
-            };
-            System.out.println("Pick a kid (Select #1 - #6): ");
+            FileInputStream fis = new FileInputStream("src/main/java/com/pluralsight/poem.txt");
+            Scanner scanner = new Scanner(fis);
+            int lineNumber = 1;
 
+            while (scanner.hasNextLine()) {
+                String line = scanner.nextLine();
+                System.out.printf("%d: %s\n", lineNumber++, line);
+            }
 
-            int index = scanner.nextInt();
-            index--; // change number from range 1-6 to range 0-5
-            // as long as the user entered a number in the range
-            // of 1 to 6, this will work. Otherwise the index
-            // will be out of range.
-            System.out.println(names[index]);
+            scanner.close();
         }
-        catch (Exception e) {
-            System.out.println("That is invalid. Sorry");
-            System.out.println(e.getMessage());
-            e.printStackTrace();
+        catch (Exception e){
+            System.out.println("Whoops. we can't do that.");
         }
+
     }
 }

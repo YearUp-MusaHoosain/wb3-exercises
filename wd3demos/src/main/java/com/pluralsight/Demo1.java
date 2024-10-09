@@ -2,7 +2,7 @@ package com.pluralsight;
 
 import java.util.Scanner;
 
-public class WB3Demos {
+public class Demo1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
