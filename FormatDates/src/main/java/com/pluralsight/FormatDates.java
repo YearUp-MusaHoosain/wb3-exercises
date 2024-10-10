@@ -22,8 +22,11 @@ public class FormatDates {
         String formattedDate3 = now.format(fmt3);
         System.out.println(formattedDate3);
 
+        //Sunday, Sep 5, 2021 10:02 AM
+//        DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy hh:mm a");
 
-        DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm:ss");
+        //Sunday, Sep 5, 2021 10:02
+        DateTimeFormatter fmt4 = DateTimeFormatter.ofPattern("EEEE, MMM dd, yyyy HH:mm");
         String formattedDate4 = now.format(fmt4);
         System.out.println(formattedDate4);
 
